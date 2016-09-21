@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ * -c category     Requerido	Nombre de la carpeta en el arbol
+                                El nombre se toma de un array de categorias, 
+                                seteado en Categories.php
+                                Sino lo encuentra es el especificado aca                                
+ * -t title        Requerido	Nombre de la capa a mostrar en el arbol
+ * -n name         Requerido	Nombre de la capa en el servicio WMS
+ * -u url          Requerido	Nombre asociado a la direccion del WMS. 
+                                Se obtiene de un array con urls seteado en Urls.php
+                                Sino está en el array la capa no se cargará
+ * -v visibility   Opcional	Estado de visibilidad inicial (1 visible, 0 no)     Defecto: 0
+ * -d tiled        Opcional	Utilizar o no protocolo WMSC (1, 0)                 Defecto: 0
+ * -b isBaseLayer  Opcional	Si es o no capa base (1, 0)                         Defecto: 0
+ * -s styles       Opcional     Nombre del estilo de la capa                        Defecto: ""
+ * -o opacity      Opcional     Valor de opacidad para la capa e/ 1 y 0             Defecto: 1
+ 
+ Cualquier opción requerida que no esté seteada la capa no se cargará
+-->
+<layers>
+    <layer c="IGN" t="Cuerpos de Agua" n="cuerpos_de_agua" u="Geodesia" />
+    <layer c="IGN" t="Cursos de Agua" n="cursos_de_agua" u="Geodesia" />
+    <layer c="IGN" t="Curvas de Nivel" n="curvas_de_nivel" u="Geodesia" />
+    <layer c="IGN" t="Ferrocarril" n="red_ferroviaria" u="Geodesia" />
+    <layer c="IGN" t="Grilla al 100000" n="grilla_100000" u="Geodesia" />
+    <layer c="IGN" t="Grilla al 50000" n="grilla_50000" u="Geodesia" />
+    <layer c="IGN" t="Grilla al 25000" n="grilla_25000" u="Geodesia" />
+    <layer c="IGN" t="Red Secundaria" n="secundaria" u="Geodesia" />
+    <layer c="IGN" t="Rutas Nacionales" n="rutas_nac" u="Geodesia" />
+    <layer c="IGN" t="Rutas Provinciales" n="Rutas_Provinciales" u="Geodesia" />
+    <layer c="IGN" t="Ejidos Urbanos" n="ejidos_urbanos" u="Geodesia" />
+    
+    <layer c="Foto" t="Vuelo 1997" n="vuelos" u="Geodesia" />
+    <layer c="Foto" t="A. Metropolitana Esc:5000/97" n="vuelo_1997" u="Geodesia" />
+    <layer c="Foto" t="Litoral 1975" n="litoral_50000" u="Geodesia" />
+    <layer c="Foto" t="Corfo 1971" n="corfo_50000" u="Geodesia" />
+    <layer c="Foto" t="Catastro 80-85" n="catastro_100000" u="Geodesia" />
+    <layer c="Foto" t="Catalogo Fotogrametrico" n="Catalogo" u="Geodesia" />
+    
+    <layer c="Dais" t="Marzo 2016" n="cub_hid_marzo" u="Geodesia" />
+    <layer c="Dais" t="Febrero 2016" n="cubhidrica-febrero-2016" u="Geodesia" />
+    <layer c="Dais" t="Noroeste 2009" n="cub_hid_2009" u="Geodesia" />
+    <layer c="Dais" t="Noroeste 2002" n="cub_hid_2002" u="Geodesia" />
+    
+    <layer c="Topo" t="Vinculaciones" n="vinculaciones" u="Geodesia" />
+    <layer c="Topo" t="Mensulas" n="mensulas" u="Geodesia" />
+    <layer c="Topo" t="Red Geoba" n="geoba" u="Geodesia" />
+    
+    <layer c="Carto" t="Cartas 5000" n="gr_5000" u="Geodesia" />
+    <layer c="Carto" t="Cartas 10000" n="gr_10000" u="Geodesia" />
+    
+    <layer c="Geodesia" t="Parcelario" n="ParcelarioCompleto" u="Desarrollo" v="1" />
+    <layer c="Geodesia" t="Parcelario Transparente" n="Parcelario_Transparente" u="Geodesia" />
+    <layer c="Geodesia" t="Urbanizaciones Cerradas" n="urbanizaciones_cerradas" u="Geodesia" />
+    <layer c="Geodesia" t="Parques Industriales" n="parques_industriales" u="Geodesia" />
+    <layer c="Geodesia" t="Cotas" n="Cotas" u="ARBA" v="1" />
+    <layer c="Geodesia" t="Zonificacion" n="zonificacion" u="UrbaSig" />    
+    
+</layers>
