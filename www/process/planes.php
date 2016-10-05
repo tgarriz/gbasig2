@@ -13,11 +13,12 @@ $db = new Connection('consulta');
 $planes = new HistoryPlanes($db->dbh, $x, $y);
 
 $result = $planes->json;
+
 $error = 0;
 if($planes->error){
 	$error = 1;
 	$result = "\"".$planes->error."\"";
 }
 echo "{\"error\":$error, \"result\": $result}";
-
+ 
 ?>

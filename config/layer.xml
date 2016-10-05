@@ -51,7 +51,7 @@
     
     <layer c="Geodesia" t="Parcelario" n="ParcelarioCompleto" u="Desarrollo" v="1" />
     <layer c="Geodesia" t="Parcelario Transparente" n="Parcelario_Transparente" u="Geodesia" />
-    <layer c="Geodesia" t="Urbanizaciones Cerradas" n="urbanizaciones_cerradas" u="Geodesia" />
+    <layer c="Geodesia" t="Urbanizaciones Cerradas" n="urbanizaciones_cerradas" u="Desarrollo" />
     <layer c="Geodesia" t="Parques Industriales" n="parques_industriales" u="Geodesia" />
     <layer c="Geodesia" t="Cotas" n="Cotas" u="ARBA" v="1" />
     <layer c="Geodesia" t="Zonificacion" n="zonificacion" u="UrbaSig" />    

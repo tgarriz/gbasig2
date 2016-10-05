@@ -19,7 +19,10 @@ class HistoryPlanes {
                 $stmt->bindParam(1, $x);
                 $stmt->bindParam(2, $y);
                 $stmt->execute();
-                $this->json = json_encode($stmt->fetch(PDO::FETCH_ASSOC)['result']);//$stmt->fetchAll(PDO::FETCH_ASSOC); //json_encode($stmt->fetchAll(PDO::FETCH_ASSOC));
+
+				$json = $stmt->fetch(PDO::FETCH_ASSOC)['result'];
+                $json = str_replace("\\", "", trim($json, '\"'));
+				$this->json = $json ? $json : "\"\"";
                 $db = null;
                 return;
             } catch (PDOException $e) {
