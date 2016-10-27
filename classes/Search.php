@@ -30,8 +30,9 @@ class Search {
             $url = $url ? ", \"url\": \"$url\"" : '';
             
             $call = (string) $si['call'] ? ", \"call\": \"" . (string) $si['call'] . "\"" : '';
+            $show = (string) $si['show'] ? ", \"show\": \"" .(string) $si['show'] . "\"" : '';
             
-            $json .= ", { \"id\": $id, \"title\": \"$title\", \"layer\": \"$layer\" $url $menu $call, ";
+            $json .= ", { \"id\": $id, \"title\": \"$title\", \"layer\": \"$layer\" $url $menu $call $show, ";
             
             $fields = $si->field;
             $json .= "\"fields\": [";

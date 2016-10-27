@@ -19,12 +19,19 @@ include_once '../include/protect.php';
         <script type="text/javascript" src="./javascripts/app.js"></script>
     </head>
     <body>
+        <div id="geocoding_google_result"><ul></ul></div>
         <div id="north">
             <div id="loading"></div>
             <div id="logo">
-                <div id="l_bsas"><img src="images/bsas.png"></div>
+                <!--<div id="l_bsas"><img src="images/bsas.png"></div>
                 <div id="l_geo"><img src="images/geobasig.png"></div>
-                <div id="l_min"><img src="images/ministerio.png"></div>
+                <div id="l_min"><img src="images/ministerio.png"></div>-->
+                <div id="l_geo"><img src="images/geobasig.png"></div>
+                <div id="l_bsas"><img src="images/bsas.png"></div>
+            </div>
+            <div id="geocoding_google">
+                <input id="geocoding_google_address" />
+                <b id="geocoding_google_clean" class="icon-cancel"></b>
             </div>
         </div>
         <div id="west">

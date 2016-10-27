@@ -6,7 +6,9 @@
         </field>
         <field type="n" name="partida" title="Partida" maxlength="6" required="1" />
     </item>
-    <item id="2" title="Número de Plano" layer="parcelas" menu="location" url="geodesia" call="numeroPlano">
+    <item id="2" title="Nomenclatura Catastral" layer="parcelas" menu="location" url="Geodesia" show="nomenclatura" call="nomenclatura">
+    </item>
+    <item id="3" title="Número de Plano" layer="parcelas" menu="location" url="geodesia" call="numeroPlano">
         <field type="n" name="partido" title="Partido" required="1">
             <definition type="combobox-pdo" />
         </field>
